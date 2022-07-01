@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700&family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30rem;
+}
+
+.containerChild {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(135deg, red, blue);
+    width: 60%;
+}
+
+.bg-pic {
+    background-image: url("/profile.jpg");
+    background-size: cover;
+    width: 40%;
+    align-content: flex-end;
+    justify-content: end;
+}
+
+.bioContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    min-width: 5rem;
+    row-gap: 10px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(119, 119, 119, 0.5);
+}
+
+.bioContainer h1 {
+    font-size: xx-large;
+}
+
+.bioContainer p {
+    text-align: justify;
+    font-size: medium;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100;
+    height: 5vh;
+    background:rgba(119, 119, 119, 0.795);
+    margin-top: 15px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    list-style-type: none;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-content: center;
+    }
+    .containerChild {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .bg-pic {
+        height: 100%;
+        width: 100%;
+        align-content: none;
+        justify-content: none;
+    }
+}
