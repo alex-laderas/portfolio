@@ -20,9 +20,18 @@
                 <div class="bg-pic">
                     <img src="src/profile.jpg" alt="">
                 </div>
+                <div class="swipePage">
+                    <span onclick=swipe()>Swipe >></span>
+                </div>
+                <script>
+                    function swipe() {
+                        doc = document.getElementById("page-one")
+                        doc.scrollIntoView(true);
+                    }
+                </script>
             </div>
         </div>
-        <div class="bioContainer">
+        <div class="bioContainer" id="page-one">
             <h1>Bio</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic delectus fuga deserunt culpa eveniet maxime eius aspernatur accusamus voluptatum itaque consequuntur, pariatur doloribus, tenetur corrupti aliquam alias repellendus? Beatae?</p>
         </div>
