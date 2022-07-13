@@ -28,21 +28,25 @@
 
 .containerChild {
     display: flex;
-    flex-direction: column;
-    vertical-align: middle;
+    flex-direction: row;
     align-items: center;
+    text-align: left;
     justify-content: center;
     color: white;
     background: linear-gradient(135deg, red, blue);
-    width: 60%;
+    width: 100%;
 }
 
-.bg-pic {
-    background-image: url("src/profile.jpg");
-    background-size: cover;
-    width: 40%;
-    align-content: flex-end;
-    justify-content: end;
+.headText {
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.589);
+    font-size: x-large;
+    margin: 0 20px;
+}
+
+.bg-pic img{
+    height: 20rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.589);
+    margin: 0 20px ;
 }
 
 .bioContainer {
@@ -80,23 +84,22 @@
     list-style-type: none;
 }
 
-.footer ul li {
+.footer ul li, a {
     margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
-@media screen and (max-width: 800px) {
-    .container {
-        flex-direction: column;
-        align-content: center;
-    }
+@media screen and (max-width: 800px){
     .containerChild {
-        width: 100%;
-        padding: 20px 0;
+        flex-direction: column-reverse;
     }
-    .bg-pic {
-        height: 100%;
-        width: 100%;
-        align-content: none;
-        justify-content: none;
+    .bg-pic img {
+        margin: 50px 0;
+    }
+    .headText {
+        text-align: center;
+        font-size: x-large;
     }
 }
