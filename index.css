@@ -74,6 +74,7 @@
 
 .bioContainer {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     flex: none;
     display: flex;
     flex-direction: column;
